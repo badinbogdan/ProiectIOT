@@ -320,7 +320,7 @@ export default class App extends React.Component {
         </View>
       )
     } else {
-      //mapping the data that we stored in dataSourced so that we can use the actual value stored inside it
+      //mapping the data that we stored in dataSource so that we can use the actual value stored inside it
       let data = this.state.dataSource.map((val, key) => {
         //creating the mapRegion object by calling the method calDelta
         let mapRegion = this.calDelta(val.field4, val.field3, val.field7)
@@ -350,8 +350,7 @@ export default class App extends React.Component {
               </MapView>
           </View>
         </View>
-        }
-      });
+        }});
       return (
         <View style={styles.container}>
           {data}
